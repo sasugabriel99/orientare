@@ -14,7 +14,7 @@ function on_device_orientation(evt)
     context.clearArc(0,0,canvas.width, canvas.height);
     context.translate(centru.x/2, centru.y/2);
     context.beginPath();
-    context.arc(100, 75, evt.gamma, 0, 4 * Math.PI);
+    context.arc(centru.x, centru,y, evt.gamma, 0, 4 * Math.PI);
     context.stroke();
    
 }
