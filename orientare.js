@@ -7,12 +7,14 @@ function on_device_orientation(evt)
     document.getElementById("a").innerHTML = "alpha = "+alpha;
     document.getElementById("b").innerHTML = "beta = "+beta;
     document.getElementById("c").innerHTML = "gamma = "+gamma;
+
     var canvas = document.getElementById("canvas");
     var context = canvas.getContext("2d");
     var centru = {x:canvas.width/2, y:canvas.height/2}
+
     context.fillStyle = "#6A0888";
     context.beginPath();
-    context.fillArc(centru.x, centru,y, evt.gamma, 0, 4 * Math.PI);
+    context.fillArc(centru.x, centru.y, evt.gamma, 0, 2 * Math.PI);
     context.stroke();
    
 }
