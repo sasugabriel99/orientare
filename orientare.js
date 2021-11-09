@@ -14,7 +14,7 @@ function on_device_orientation(evt)
 
     context.fillStyle = "#6A0888";
     context.beginPath();
-    context.fillArc(centru.x, centru.y, evt.gamma, 0, 2 * Math.PI);
+    context.arc(centru.x, centru.y, evt.gamma, 0, 2 * Math.PI);
     context.stroke();
    
 }
